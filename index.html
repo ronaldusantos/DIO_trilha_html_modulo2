@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Clínica de Saúde Bem-Estar</title>
+	<link rel="stylesheet" href="style.css">
+	<!-- Incluindo o script do Google Maps -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=SUA_API_KEY"></script>
+	<script>
+		function initMap() {
+			// Criando o objeto do mapa e definindo a localização
+			var clinicaLocation = {lat: -23.5642626, lng: -46.6533158};
+			var map = new google.maps.Map(document.getElementById('map'), {
+				zoom: 15,
+				center: clinicaLocation
+			});
+
+			// Adicionando o marcador da clínica
+			var marker = new google.maps.Marker({
+				position: clinicaLocation,
+				map: map,
+				title: 'Clínica de Saúde Bem-Estar'
+			});
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<h1>Clínica de Saúde Bem-Estar</h1>
+			<nav>
+				<ul>
+					<li><a href="#sobre">Sobre</a></li>
+					<li><a href="#servicos">Serviços</a></li>
+					<li><a href="#equipe">Equipe</a></li>
+					<li><a href="#contato">Contato</a></li>
+					<li><a href="#localizacao">Localização</a></li>
+				</ul>
+			</nav>
+			</header>
+	<main>
+		<main>
+			<section id="sobre">
+				<h2>Sobre a Clínica</h2>
+				<p>A Clínica de Saúde Bem-Estar é uma clínica médica especializada em cuidar da saúde e bem-estar dos seus pacientes. Nosso objetivo é oferecer serviços de qualidade e atendimento personalizado, visando o tratamento integral do paciente, não só para tratar os sintomas, mas também as causas.</p>
+			</section>
+	
+			<section id="servicos">
+				<h2>Nossos Serviços</h2>
+				<ul>
+					<li>Consultas médicas em diversas áreas da saúde</li>
+					<li>Exames de diagnóstico, como análises clínicas, ultrassonografia, radiografia e tomografia</li>
+					<li>Tratamentos clínicos e cirúrgicos</li>
+					<li>Acompanhamento médico para gestantes e bebês</li>
+					<li>Atendimento psicológico individual e em grupo</li>
+				</ul>
+			</section>
+	
+			<section id="equipe">
+				<h2>Nossa Equipe</h2>
+				<p>Nossa equipe é composta por médicos e profissionais de saúde altamente qualificados e comprometidos com o bem-estar de nossos pacientes. Conheça alguns de nossos profissionais:</p>
+				<ul>
+					<li><strong>Dr. João Silva</strong> - Cardiologista</li>
+					<li><strong>Dra. Maria Santos</strong> - Dermatologista</li>
+					<li><strong>Dr. Pedro Oliveira</strong> - Gastroenterologista</li>
+					<li><strong>Dra. Ana Costa</strong> - Ginecologista e Obstetra</li>
+					<li><strong>Dr. José Souza</strong> - Neurologista</li>
+					<li><strong>Dra. Laura Fernandes</strong> - Oftalmologista</li>
+					<li><strong>Dra. Carla Mendes</strong> - Psicóloga</li>
+				</ul>
+			</section>
+	</main>
+	<footer>
+		<section id="contato">
+			<h2>Contato</h2>
+			<p>Entre em contato conosco para agendar uma consulta ou obter mais informações sobre nossos serviços:</p>
+			<ul>
+				<li>Telefone: (71) 3427-1840</li>
+				<li>Email: contato@clinicabemestar.com.br
+			</li>
+	</footer>
+	<footer>
+		<section id="localizacao">
+			<h2>Localização</h2>
+			<p>Estamos localizados na Rua das Flores, 123, no bairro Jardim das Oliveiras, em São Paulo-SP.</p>
+	</footer>
+</body>
+</html>
